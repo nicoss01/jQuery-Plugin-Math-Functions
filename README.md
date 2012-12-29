@@ -110,3 +110,6 @@ Check if a number is a prime number.
         alert(pn); 
     });  
     </script>
+    
+    
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/f6da60bc77442f11b26679b049a134c3 "githalytics.com")](http://githalytics.com/nicoss01/jQuery-Plugin-Math-Functions)
