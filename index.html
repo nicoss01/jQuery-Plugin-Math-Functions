@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Jquery-plugin-math-functions by nicoss01</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Jquery-plugin-math-functions</h1>
+        <h2>Additionnal jQuery mathematical functions</h2>
+        <a href="https://github.com/nicoss01/jQuery-Plugin-Math-Functions" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="presentation" class="anchor" href="#presentation"><span class="octicon octicon-link"></span></a>Presentation</h1>
+
+<p>This plugin add some useful mathematical function to jQuery.</p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>This plugin require at less <em>jQuery 1.4</em>.
+Download math.jquery.js and place it in your website folder.
+In you website page, add this code to load the file :</p>
+
+<pre><code>&lt;script type="text/javascript" src="math.jquery.js"&gt;&lt;/script&gt;`
+</code></pre>
+
+<h1>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h1>
+
+<h2>
+<a name="html-code" class="anchor" href="#html-code"><span class="octicon octicon-link"></span></a>HTML Code</h2>
+
+<pre><code>&lt;ul id="list1"&gt;
+  &lt;li&gt;12&lt;/li&gt;
+    &lt;li&gt;16&lt;/li&gt;
+    &lt;li&gt;10&lt;/li&gt;
+    &lt;li&gt;18&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>or </p>
+
+<pre><code>&lt;form action="" id="form1"&gt;
+    &lt;label&gt;Value 1 : &lt;input type="text" name="values" /&gt;&lt;/label&gt;
+    &lt;label&gt;Value 2 : &lt;input type="text" name="values" /&gt;&lt;/label&gt;
+    &lt;label&gt;Value 3 : &lt;input type="text" name="values" /&gt;&lt;/label&gt;
+    &lt;label&gt;Value 4 : &lt;input type="text" name="values" /&gt;&lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h2>
+<a name="average-function" class="anchor" href="#average-function"><span class="octicon octicon-link"></span></a>Average Function</h2>
+
+<p>Calculate the average of a list of elements in a container.</p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var avg = $("#list1").avg({items:"li"}); 
+    alert(avg); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<p>or </p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var avg = $("#form1").avg({items:"input[name=values]"}); 
+    alert(avg); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<h2>
+<a name="minimum-function" class="anchor" href="#minimum-function"><span class="octicon octicon-link"></span></a>Minimum Function</h2>
+
+<p>Return the minimum value of a list of elements in a container.</p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var min = $("#list1").min({items:"li"}); 
+    alert(min); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<p>or </p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var min = $("#form1").min({items:"input[name=values]"}); 
+    alert(min); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<h2>
+<a name="maximum-function" class="anchor" href="#maximum-function"><span class="octicon octicon-link"></span></a>Maximum Function</h2>
+
+<p>Return the maximum value of a list of elements in a container.</p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var max = $("#list1").max({items:"li"}); 
+    alert(max); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<p>or </p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var max = $("#form1").max({items:"input[name=values]"}); 
+    alert(max); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<h2>
+<a name="is-prime-number-function" class="anchor" href="#is-prime-number-function"><span class="octicon octicon-link"></span></a>is Prime Number Function</h2>
+
+<p>Check if a number is a prime number.</p>
+
+<pre><code>&lt;script type="text/javascript"&gt; 
+$(document).ready(function(){ 
+    var pn = $().isPrimeNumber(256); 
+    alert(pn); 
+});  
+&lt;/script&gt;
+</code></pre>
+
+<p><a href="http://githalytics.com/nicoss01/jQuery-Plugin-Math-Functions"><img src="https://cruel-carlota.pagodabox.com/f6da60bc77442f11b26679b049a134c3" alt="githalytics.com alpha" title="githalytics.com"></a></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/nicoss01/jQuery-Plugin-Math-Functions/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/nicoss01/jQuery-Plugin-Math-Functions/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/nicoss01/jQuery-Plugin-Math-Functions"></a> is maintained by <a href="https://github.com/nicoss01">nicoss01</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-15538849-28");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
