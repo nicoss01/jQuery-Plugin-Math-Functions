@@ -1,9 +1,9 @@
 {
-    "name": "math",
-    "title": "Math Functions",
+    "name": "maths",
+    "title": "Maths Functions",
     "description": "This plugin add some useful mathematical function to jQuery.",
     "keywords": [
-        "math",
+        "maths",
         "mathematics"
     ],
     "version": "1.0",
@@ -27,7 +27,7 @@
     "bugs": "https://github.com/nicoss01/jQuery-Plugin-Math-Functions/issues",
     "homepage": "https://github.com/nicoss01/jQuery-Plugin-Math-Functions",
     "docs": "https://github.com/nicoss01/jQuery-Plugin-Math-Functions",
-    "download": "http://code.jquery.com/#math",
+    "download": "http://www.devictio.fr/uploads/Extensions/maths.jquery.js",
     "dependencies": {
         "jquery": ">=1.4"
     }
