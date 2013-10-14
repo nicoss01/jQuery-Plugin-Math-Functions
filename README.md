@@ -12,7 +12,9 @@ In you website page, add this code to load the file :
 
     <script type="text/javascript" src="math.jquery.js"></script>`
 
-
+Formation
+============
+Pour plus d'informations sur l'utilisation de jQuery, retrouvez notre formation jquery à Lyon http://www.devictio.fr/internet/formation-jquery.php
 Examples
 ========
 HTML Code
